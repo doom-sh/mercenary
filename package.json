@@ -1,6 +1,6 @@
 {
   "name": "@doom.sh/mercenary",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "concurrently \"vite\" \"start-storybook -p 6006\"",
     "build": "concurrently \"tsc && vite build\" \"build-storybook\"",
