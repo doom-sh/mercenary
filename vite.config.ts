@@ -13,5 +13,8 @@ export default defineConfig({
       name: "Mercenary",
       fileName: (format) => `mercenary.${format}.js`,
     },
+    rollupOptions: {
+      external: ["fs", "path", "onigasm"],
+    },
   },
 });
