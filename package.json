@@ -1,6 +1,6 @@
 {
   "name": "@doom.sh/mercenary",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "concurrently \"vite\" \"start-storybook -p 6006\"",
     "build": "concurrently \"tsc && vite build\" \"build-storybook\"",
@@ -46,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/doom-sh/mercenary/issues"
   },
-  "homepage": "https://github.com/doom-sh/mercenary#readme"
+  "homepage": "https://mercenary.doom.sh"
 }
