@@ -32,7 +32,15 @@ export const useCreateMercenaryContext = (): IMercenaryContextValue => {
     const highlighter = await shiki.getHighlighter({
       theme: "github-dark",
       // A list of languages to load upfront.
-      langs: ["html", "css", "javascript", "typescript", "graphql"],
+      langs: [
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "graphql",
+        "json",
+        "bash",
+      ],
       // A list of themes to load upfront.
       themes: ["github-dark", "github-light"],
     });

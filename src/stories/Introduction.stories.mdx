@@ -20,6 +20,8 @@ yarn add @doom.sh/mercenary
 import Mercenary, { MercenaryProps } from "@doom.sh/mercenary";
 ```
 
+Mercenary is ESM only. Please make sure you are using versions of NextJS ([see here if using an older version](https://stackoverflow.com/a/66246141)) and React that support ESM.
+
 ## Why I built it
 
 Remark/rehype plugins are useful when rendering Markdown, but these plugins vary in quality and sometimes become unmaintained. They also prescribe varying conventions for extending markdown syntax (e.g. code blocks line highlighting). Secondly, rehype plugins tend to annotate the generated HTML with classnames that pollute global scope. I would prefer to render my Markdown with encapsulated React components as much as possible.
