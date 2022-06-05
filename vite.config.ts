@@ -11,6 +11,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/lib/index.tsx"),
       name: "Mercenary",
+      formats: ["es"],
       fileName: (format) => `mercenary.${format}.js`,
     },
     rollupOptions: {
