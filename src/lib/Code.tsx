@@ -1,5 +1,6 @@
 import React from "react";
 import { useMercenaryContext } from "./context";
+import cx from "classnames";
 
 export const getLanguageFromClassName = (className?: string) => {
   if (!className) return "";
@@ -48,7 +49,7 @@ const BlockCode = (props: CodeProps) => {
     <div>Loading code block...</div>
   ) : (
     <div
-      className={className}
+      className={cx(className)}
       dangerouslySetInnerHTML={{ __html: markedUpHtml }}
     />
   );
