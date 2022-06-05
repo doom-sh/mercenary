@@ -1,6 +1,6 @@
 {
   "name": "@doom.sh/mercenary",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "concurrently \"vite\" \"start-storybook -p 6006\"",
     "build": "tsc && vite build && build-storybook",
@@ -36,7 +36,17 @@
     "vite-plugin-dts": "^1.2.0"
   },
   "description": "Mercenary is a markdown rendering component for React.",
-  "main": "dist/mercenary.es.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/mercenary.umd.js",
+  "module": "./dist/mercenary.es.js",
+  "exports": {
+    ".": {
+      "require": "./dist/mercenary.umd.js",
+      "import": "./dist/mercenary.es.js"
+    }
+  },
   "types": "dist/lib/index.d.ts",
   "repository": {
     "type": "git",
