@@ -1,11 +1,10 @@
 {
   "name": "@doom.sh/mercenary",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "concurrently \"vite\" \"start-storybook -p 6006\"",
-    "build": "concurrently \"tsc && vite build\" \"build-storybook\"",
-    "preview": "vite preview",
-    "deploy": "yarn build && npm publish --access public"
+    "build": "tsc && vite build && build-storybook",
+    "preview": "vite preview"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -38,6 +37,7 @@
   },
   "description": "Mercenary is a markdown rendering component for React.",
   "main": "dist/mercenary.es.js",
+  "types": "dist/lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doom-sh/mercenary.git"

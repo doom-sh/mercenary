@@ -9,7 +9,7 @@ import { MercenaryContext, useCreateMercenaryContext } from "./context";
 import { TaskList, UnorderedList } from "./List";
 import "./index.css";
 
-interface MercenaryProps {
+export interface MercenaryProps {
   // className to style the wrapper
   className?: string;
   // GFM-compliant markdown
