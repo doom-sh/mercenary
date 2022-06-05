@@ -10,6 +10,16 @@ It includes:
 - Embedding of URLs
 - Hijacks code-block syntax with custom directives for other features
 
+## Installation and usage
+
+```bash
+yarn add @doom.sh/mercenary
+```
+
+```ts
+import Mercenary, { MercenaryProps } from "@doom.sh/mercenary";
+```
+
 ## Why I built it
 
 Remark/rehype plugins are useful when rendering Markdown, but these plugins vary in quality and sometimes become unmaintained. They also prescribe varying conventions for extending markdown syntax (e.g. code blocks line highlighting). Secondly, rehype plugins tend to annotate the generated HTML with classnames that pollute global scope. I would prefer to render my Markdown with encapsulated React components as much as possible.
