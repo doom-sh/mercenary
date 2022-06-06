@@ -37,6 +37,7 @@ export const useCreateMercenaryContext = (): IMercenaryContextValue => {
         "css",
         "javascript",
         "typescript",
+        "tsx",
         "graphql",
         "json",
         "bash",
