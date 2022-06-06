@@ -15,7 +15,14 @@ export default defineConfig({
       fileName: (format) => `mercenary.${format}.js`,
     },
     rollupOptions: {
-      external: ["shiki", "react", "react-dom", "react-markdown", "remark-gfm"],
+      external: [
+        "shiki",
+        "react",
+        "react-dom",
+        "react-markdown",
+        "remark-gfm",
+        "rehype-raw",
+      ],
       output: {
         globals: {
           react: "React",

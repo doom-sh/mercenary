@@ -1,13 +1,14 @@
 import cx from "classnames";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import Code, {
   convertCodeChildrenToString,
   getLanguageFromClassName,
 } from "./Code";
 import { MercenaryContext, useCreateMercenaryContext } from "./context";
-import { TaskList, UnorderedList } from "./List";
 import "./index.css";
+import { TaskList, UnorderedList } from "./List";
 
 export interface MercenaryProps {
   // className to style the wrapper
@@ -24,6 +25,7 @@ const Mercenary = ({ className, markdown }: MercenaryProps) => {
       <ReactMarkdown
         className={cx(className)}
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={{
           code: ({ node, inline, className, children, ...props }) => {
             return (

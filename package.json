@@ -1,6 +1,6 @@
 {
   "name": "@doom.sh/mercenary",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "scripts": {
     "dev": "concurrently \"vite\" \"start-storybook -p 6006\"",
     "build": "tsc && vite build && build-storybook",
@@ -11,6 +11,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-markdown": "^8.0.3",
+    "rehype-raw": "^6.1.1",
     "remark-gfm": "^3.0.1",
     "shiki": "^0.10.1"
   },
